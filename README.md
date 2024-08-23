@@ -59,6 +59,10 @@ Or use the [preset workflow file](https://github.com/dabao1955/kernel_build_acti
 
 - Finally, run the workflow you just wrote.
 ## Inputs
+> [!WARNING]
+>
+> enable lxc or nethunter input options may cause kernel compilation failed!
+
 | input               | required | description | example value |
 |---------------------|----------|-------------|---------|
 | kernel-url | true | URL of Android kernel source code for your phone | https://github.com/username/project |
