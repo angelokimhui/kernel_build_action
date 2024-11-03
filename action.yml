@@ -485,9 +485,7 @@ runs:
             else
                 cp out/arch/${{ inputs.arch }}/boot/Image AnyKernel3/ -rv
             fi
-
-            test -f out/arch/${{ inputs.arch }}/boot/dtbo.img && cp -v out/arch/${{ inputs.arch }}/boot/dtbo.img AnyKernel3/
-
+            
             rm -rf -v AnyKernel3/.git* AnyKernel3/README.md
             if [ ${{ inputs.release }} = false ]; then
                 cp AnyKernel3 ../../build -r -v
